@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+  <style>
+    /* Ethan smith. closest optical match */
+    .base {
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 120px;
+      letter-spacing: 1.2px;
+      fill: #ffffff;
+    }
+  </style>
+
+  <text x="20" y="140" class="base">
+    <tspan font-weight="600">gulcin </tspan>
+    <tspan font-weight="100">gulcu</tspan>
+    <!-- tight circular red dot -->
+    <tspan fill="#ff2b2b" font-size="24" dx="-6" dy="-1">●</tspan>
+  </text>
+</svg>
