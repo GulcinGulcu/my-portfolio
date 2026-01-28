@@ -24,6 +24,7 @@ import {
   SiPostgresql,
   SiTailwindcss,
 } from "react-icons/si";
+import CountUp from "react-countup";
 
 //  data
 const aboutData = [
@@ -104,19 +105,64 @@ const About = () => {
       </motion.div>
       <div className="container mx-auto h-full flex flex-col xl:flex-row items-center gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="h2">
+          <motion.h2
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2"
+          >
             From First Lines to <span className="text-accent">Real</span>{" "}
             Products
-          </h2>
-          <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          >
             My journey into software development began three years ago with a
             curiosity about turning ideas into real products. Today, I focus on
             frontend development with React and Next.js, building user-friendly
             interfaces while growing as a frontend-focused full-stack developer
             through real-world projects.
-          </p>
+          </motion.p>
+          {/* counters */}
+          <motion.div
+            variants={fadeIn("right", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-12 xl:mb-0"
+          >
+            <div className="flex flex-1 gap-x-5 justify-center xl:justify-start">
+              <div className="relative after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent">
+                  <CountUp start={0} end={2} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  years of experience
+                </div>
+              </div>
+              <div className="relative">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent">
+                  <CountUp start={0} end={10} duration={6} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Finished Projects
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[400px]">
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-col w-full xl:max-w-[48%] h-[400px]"
+        >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((section, sectionIndex) => {
               return (
@@ -154,7 +200,7 @@ const About = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
