@@ -51,7 +51,7 @@ const Home = () => {
       {/* img */}
       <div className="absolute h-full w-[1200px] right-0 bottom-0">
         {/* bg-img */}
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-no-repeat xl:bg-right w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-no-repeat xl:bg-right w-full h-full absolute -bottom-52 -right-52 mix-blend-color-dodge translate-z-0"></div>
         {/* particles */}
         <ParticlesContainer />
         {/* avatar */}
