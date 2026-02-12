@@ -19,8 +19,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming ideas <br /> into
-            <span className="text-accent"> Digital Experiences</span>{" "}
+            Turning Ideas <br /> into
+            <span className="text-accent"> Usable Interfaces</span>{" "}
           </motion.h1>
           {/* Subtitle */}
           <motion.p
@@ -30,8 +30,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Frontend-focused full-stack developer building modern, intuitive
-            applications with React, Next.js, and scalable backend technologies.
+            I'm a frontend-focused full-stack developer building modern, intuitive
+            applications with React/React Native, Next.js, and scalable backend technologies.
           </motion.p>
           {/* Button */}
           <div className="flex justify-center xl:hidden relative">
