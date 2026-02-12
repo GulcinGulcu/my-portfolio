@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 import { BsArrowDown } from "react-icons/bs";
 import { fadeIn } from "../../variants";
-import Link from "next/link";
 
 const Contact = () => {
   return (

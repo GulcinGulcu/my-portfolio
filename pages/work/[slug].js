@@ -1,6 +1,4 @@
 import { useRouter } from "next/router";
-import LingoSignin from "../../public/lingo-signin.png";
-import Wallet from "../../public/wallet-portfolio.png";
 import Circles from "../../components/Circles";
 import Bulb from "../../components/Bulb";
 import { motion } from "framer-motion";

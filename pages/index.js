@@ -1,6 +1,4 @@
-import Image from "next/image";
 import ProjectsBtn from "../components/ProjectsBtn";
-import Avatar from "../components/Avatar";
 import { fadeIn } from "../variants";
 import { motion } from "framer-motion";
 import ParticlesContainer from "../components/ParticlesContainer";
