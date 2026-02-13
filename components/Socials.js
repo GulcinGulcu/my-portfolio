@@ -1,18 +1,32 @@
 import { RiGithubLine, RiLinkedinLine, RiMailLine } from "react-icons/ri";
-import Link from "next/link";
 
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-xl">
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      <a
+        href="https://github.com/GulcinGulcu"
+        className="hover:text-accent transition-all duration-300"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <RiGithubLine />
-      </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      </a>
+      <a
+        href={"https://www.linkedin.com/in/gulcin-gulcu-07a668178/"}
+        className="hover:text-accent transition-all duration-300"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <RiLinkedinLine />
-      </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      </a>
+      <a
+        href={"mailto:gulcin.gulcu7@gmail.com?subject=Hello!"}
+        className="hover:text-accent transition-all duration-300"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <RiMailLine />
-      </Link>
+      </a>
     </div>
   );
 };

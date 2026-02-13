@@ -20,7 +20,7 @@ const Contact = () => {
             Let's <span className="text-accent">connect!</span>
           </motion.h2>
           <a
-            href={"mailto:gulcingulcu7@gmail.com?subject=Hello"}
+            href={"mailto:gulcingulcu7@gmail.com?subject=Hello!"}
             className="btn rounded-full border border-white/50 max-w-[220px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
           >
             <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
