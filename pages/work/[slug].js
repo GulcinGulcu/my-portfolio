@@ -139,10 +139,10 @@ export default function WorkDetail() {
     return <div className="container mx-auto py-20">Project not found.</div>;
 
   return (
-    <div className="h-full overflow-y-auto bg-primary/30 py-36 flex sm:items-center">
+    <div className="h-full overflow-y-auto sm:overflow-hidden bg-primary/30 py-36 flex sm:items-center">
       <Circles />
       <div className="container mx-auto my-10 xl:my-0">
-        <div className="flex flex-col items-center xl:flex-row gap-x-8 overflow-scroll">
+        <div className="flex flex-col items-center xl:flex-row gap-x-8">
           {project.hero === "video" && project.video?.src && (
             <motion.div
               variants={fadeIn("up", 0.6)}
