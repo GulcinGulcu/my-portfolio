@@ -20,11 +20,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import ProjectSlider from "../../components/ProjectSlider";
 
-import {
-  FaReact,
-  FaNodeJs,
-  FaLayerGroup,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaLayerGroup } from "react-icons/fa";
 
 import {
   SiNextdotjs,
@@ -147,10 +143,10 @@ export default function WorkDetail() {
     return <div className="container mx-auto py-20">Project not found.</div>;
 
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="h-full overflow-y-auto bg-primary/30 py-36 flex sm:items-center">
       <Circles />
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center xl:flex-row gap-x-8">
+      <div className="container mx-auto my-10 xl:my-0">
+        <div className="flex flex-col items-center xl:flex-row gap-x-8 overflow-scroll">
           {project.hero === "video" && project.video?.src && (
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -221,7 +217,7 @@ export default function WorkDetail() {
                 </li>
               ))}
             </ul>
-            <div className="flex gap-4 justify-center xl:justify-start">
+            <div className="flex gap-4 justify-center xl:justify-start mb-24 xl:mb-0">
               {project.liveUrl && (
                 <a
                   href={project.liveUrl}
