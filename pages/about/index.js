@@ -34,22 +34,22 @@ const aboutData = [
       {
         title: "Frontend Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <SiTailwindcss />,
+          FaHtml5,
+          FaCss3,
+          FaJs,
+          FaReact,
+          SiNextdotjs,
+          SiFramer,
+          SiTailwindcss,
         ],
       },
       {
         title: "Backend & Data",
-        icons: [<FaNodeJs />, <SiExpress />, <SiMongodb />, <SiPostgresql />],
+        icons: [FaNodeJs, SiExpress, SiMongodb, SiPostgresql],
       },
       {
         title: "UI / UX & Tools",
-        icons: [<FaFigma />, <FaGitAlt />, <FaGithub />],
+        icons: [FaFigma, FaGitAlt, FaGithub],
       },
     ],
   },
@@ -171,7 +171,7 @@ const About = () => {
                     index === sectionIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white/60 after:absolute after:-bottom-1 after:left-0`}
-                  key={sectionIndex}
+                  key={section.title}
                   onClick={() => setIndex(sectionIndex)}
                 >
                   {section.title}
@@ -183,7 +183,7 @@ const About = () => {
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
-                  key={itemIndex}
+                  key={`${aboutData[index].title}-${item.title}`}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   {/* title */}
@@ -192,8 +192,15 @@ const About = () => {
                   <div>{item.stage}</div>
                   {/* icons */}
                   <div className="flex gap-x-4">
-                    {item.icons?.map((icon, iconIndex) => {
-                      return <div className="text-lg text-white">{icon}</div>;
+                    {item.icons?.map((Icon, iconIndex) => {
+                      return (
+                        <div
+                          key={`${item.title}-icon-${iconIndex}`}
+                          className="text-lg text-white"
+                        >
+                          <Icon />
+                        </div>
+                      );
                     })}
                   </div>
                 </div>

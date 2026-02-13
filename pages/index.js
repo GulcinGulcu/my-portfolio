@@ -28,7 +28,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I'm a frontend-focused full-stack developer building modern, intuitive
+            I&apos;m a frontend-focused full-stack developer building modern, intuitive
             applications with React/React Native, Next.js, and scalable backend technologies.
           </motion.p>
           {/* Button */}

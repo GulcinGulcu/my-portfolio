@@ -50,10 +50,8 @@ export const projects = [
     liveUrl: "https://lingo-vn8u.onrender.com",
     githubUrl: "https://github.com/GulcinGulcu/lingo",
     hero: "video",
-    video: {
-      src: "/lingo.mp4",
-    },
-    icons: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiMongodb />],
+    video: { src: "/lingo.mp4" },
+    icons: [FaReact, FaNodeJs, SiExpress, SiMongodb],
   },
   {
     slug: "wallet-app",
@@ -73,7 +71,7 @@ export const projects = [
     githubUrl: "https://github.com/GulcinGulcu/wallet",
     hero: "gallery",
     images: [WalletSignIn, WalletHome, WalletCreate],
-    icons: [<FaReact />, <FaNodeJs />, <SiExpress />, <SiPostgresql />],
+    icons: [FaReact, FaNodeJs, SiExpress, SiPostgresql],
   },
   {
     slug: "music-rewards",
@@ -107,7 +105,7 @@ export const projects = [
       MrSettingsLight,
       MrCompleted,
     ],
-    icons: [<FaReact />, <SiTypescript />, <SiExpo />],
+    icons: [FaReact, SiTypescript, SiExpo],
   },
   {
     slug: "product-store",
@@ -126,10 +124,8 @@ export const projects = [
     liveUrl: "ecommerce-ea93.onrender.com",
     githubUrl: "https://github.com/GulcinGulcu/ecommerce",
     hero: "video",
-    video: {
-      src: "/product-store.mp4",
-    },
-    icons: [<SiNextdotjs />, <SiMongodb />, <FaLayerGroup />],
+    video: { src: "/product-store.mp4" },
+    icons: [SiNextdotjs, SiMongodb, FaLayerGroup],
   },
 ];
 
@@ -192,10 +188,10 @@ export default function WorkDetail() {
               <div className="hidden md:flex">-</div>
               {/* icons */}
               <div className="flex gap-x-4">
-                {project.icons?.map((icon, iconIndex) => {
+                {project.icons?.map((Icon, iconIndex) => {
                   return (
                     <div key={iconIndex} className="text-lg text-white">
-                      {icon}
+                      <Icon />
                     </div>
                   );
                 })}

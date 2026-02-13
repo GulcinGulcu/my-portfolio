@@ -17,7 +17,7 @@ const Contact = () => {
             exit="hidden"
             className="h2 mb-12"
           >
-            Let's <span className="text-accent">connect!</span>
+            Let&apos;s <span className="text-accent">connect!</span>
           </motion.h2>
           <a
             href={"mailto:gulcingulcu7@gmail.com?subject=Hello!"}
