@@ -20,7 +20,7 @@ const Socials = () => {
         <RiLinkedinLine />
       </a>
       <a
-        href={"mailto:gulcin.gulcu7@gmail.com?subject=Hello!"}
+        href={"mailto:gulcingulcu7@gmail.com?subject=Hello!"}
         className="hover:text-accent transition-all duration-300"
         target="_blank"
         rel="noopener noreferrer"
