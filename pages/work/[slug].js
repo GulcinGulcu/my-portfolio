@@ -131,7 +131,10 @@ export const projects = [
 
 export default function WorkDetail() {
   const router = useRouter();
-  const { slug } = router.query;
+
+  const slug = typeof router.query.slug === "string" ? router.query.slug : null;
+
+   if (!slug) return <div className="h-screen bg-primary/30" />;
 
   const project = projects.find((p) => p.slug === slug);
 
