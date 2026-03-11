@@ -121,8 +121,8 @@ export const projects = [
     ],
     tech: ["Next.js", "Express", "MongoDB", "Zustand", "Chakra UI"],
     cover: "/work/product-store.png",
-    liveUrl: "ecommerce-ea93.onrender.com",
-    githubUrl: "https://github.com/GulcinGulcu/ecommerce",
+    liveUrl: "https://ecommerce-ea93.onrender.com",
+    githubUrl: "https://github.com/GulcinGulcu/product-store",
     hero: "video",
     video: { src: "/product-store.mp4" },
     icons: [SiNextdotjs, SiMongodb, FaLayerGroup],
@@ -134,7 +134,7 @@ export default function WorkDetail() {
 
   const slug = typeof router.query.slug === "string" ? router.query.slug : null;
 
-   if (!slug) return <div className="h-screen bg-primary/30" />;
+  if (!slug) return <div className="h-screen bg-primary/30" />;
 
   const project = projects.find((p) => p.slug === slug);
 
@@ -219,6 +219,7 @@ export default function WorkDetail() {
             <div className="flex gap-4 justify-center xl:justify-start mb-24 xl:mb-0">
               {project.liveUrl && (
                 <a
+                  target="_blank"
                   href={project.liveUrl}
                   className="btn rounded-full border border-white/50 max-w-[220px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
                 >
@@ -230,6 +231,7 @@ export default function WorkDetail() {
               )}
               {project.githubUrl && (
                 <a
+                  target="_blank"
                   href={project.githubUrl}
                   className="btn rounded-full border border-white/50 max-w-[220px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
                 >
